@@ -17,9 +17,7 @@ source /data/tingyue/anaconda3/bin/activate DD-Time
 
 # export CUDA_VISIBLE_DEVICES="2"
 
-elect_rate=0.8 # VQVAE elect rate
 export CUDA_VISIBLE_DEVICES="0"
-# elect_rate=$2
 
 root_path_name=../TFB_data/forecasting
 model_id_name=Cross_small
