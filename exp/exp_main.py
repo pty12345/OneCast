@@ -586,7 +586,7 @@ class Exp_Main(Exp_Basic):
         trues = []
         inputx = []
 
-        print("successfully enter test_func...")
+        # print("successfully enter test_func...")
         
         output_tokens_list, gt_tokens_list = [], []
         with torch.no_grad():
