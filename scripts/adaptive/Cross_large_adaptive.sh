@@ -52,50 +52,8 @@ seq_len=96
 
 elect_rate=0
 
-# for adaptive_dataset in 'ETTh2' 'ETTm2' 'weather' 'traffic' 'CzeLan'; do   
-#     for pred_len in 24 48 96 192 # 36 48 60 #  720 # 192      # 336 720
-#     do
-#         python -u run_longExp.py \
-#         --random_seed $random_seed \
-#         --use_multi_gpu \
-#         --cross_dataset "ETTh2,ETTm2,electricity,weather,traffic,CzeLan" \
-#         --mask_schedule $mask_schedule \
-#         --is_training 1 \
-#         --backbone $backbone \
-#         --backbone_dim $backbone_dim \
-#         --root_path $root_path_name \
-#         --model_id $model_id_name'_'$seq_len'_'$pred_len \
-#         --model $model_name \
-#         --data $data_name \
-#         --features M \
-#         --seq_len $seq_len \
-#         --pred_len $pred_len \
-#         --VQ_type $VQ_type \
-#         --VQ_epoch $VQ_epoch \
-#         --elect_rate $elect_rate \
-#         --token_len $token_len \
-#         --wave_length $wave_length \
-#         --wave_stride $wave_stride \
-#         --block_num $block_num \
-#         --n_embed $n_embed \
-#         --d_model $d_model \
-#         --d_ff 256 \
-#         --dropout 0.2 \
-#         --des 'Exp' \
-#         --train_epochs 20 \
-#         --itr 1 \
-#         --adaptive_dataset $adaptive_dataset \
-#         --batch_size 32 \
-#         --n_classifier_layer $n_classifier_layer \
-#         --infer_batch_size 64 \
-#         --infer_step $infer_step \
-#         --unify_lr 0.0001 \
-#         --adaptive_lr 0.0001 >logs/adaptive/Cross_large/$model_name'_'$backbone'_'$model_id_name'_'$seq_len'_'$pred_len'_'$VQ_type'_bl'$block_num'_wl'$wave_length'_tl'$token_len'_nl'$n_classifier_layer'_nb'$n_embed'_VQepoch'$VQ_epoch'_'$mask_schedule'_'$adaptive_dataset.log
-#     done
-# done
-
-for adaptive_dataset in 'ETTh2' 'ETTm2'; do   
-    for pred_len in 192 # 36 48 60 #  720 # 192      # 336 720
+for adaptive_dataset in 'ETTh2' 'ETTm2' 'weather' 'traffic' 'CzeLan'; do   
+    for pred_len in 24 48 96 192 # 36 48 60 #  720 # 192      # 336 720
     do
         python -u run_longExp.py \
         --random_seed $random_seed \
@@ -129,7 +87,7 @@ for adaptive_dataset in 'ETTh2' 'ETTm2'; do
         --adaptive_dataset $adaptive_dataset \
         --batch_size 32 \
         --n_classifier_layer $n_classifier_layer \
-        --infer_batch_size 48 \
+        --infer_batch_size 64 \
         --infer_step $infer_step \
         --unify_lr 0.0001 \
         --adaptive_lr 0.0001 >logs/adaptive/Cross_large/$model_name'_'$backbone'_'$model_id_name'_'$seq_len'_'$pred_len'_'$VQ_type'_bl'$block_num'_wl'$wave_length'_tl'$token_len'_nl'$n_classifier_layer'_nb'$n_embed'_VQepoch'$VQ_epoch'_'$mask_schedule'_'$adaptive_dataset.log
