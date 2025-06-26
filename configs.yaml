@@ -1,0 +1,17 @@
+model: 
+  gpt2: 
+    root_dir: "/data/tingyue/LM-Base-Model/GPT2"
+    model_dim: 768
+  qwen: 
+    root_dir: "/data/tingyue/LM-Base-Model/Qwen2.5-0.5B-Instruct"
+    model_dim: 896
+training:
+  noise_type: "mask"
+  mixed_precision: "bf16"
+  seed: 10086
+  max_train_steps: 500000
+  cond_dropout_prob: 0.1
+  min_masking_rate: 0.0
+  label_smoothing: 0.0
+  guidance_scale: 0.0
+  generation_timesteps: 12

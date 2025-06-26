@@ -1,0 +1,6 @@
+**/checkpoints/
+**/logs/
+**/__pycache__/
+
+dataset/
+test_results/

@@ -1,0 +1,12 @@
+einops==0.8.1
+flash_attn==2.8.0.post2
+matplotlib==3.10.3
+numpy==2.3.0
+omegaconf==2.3.0
+pandas==2.3.0
+scikit_learn==1.7.0
+sktime==0.35.0
+thop==0.1.1.post2209072238
+torch==2.5.1
+tqdm==4.67.1
+transformers==4.47.1
