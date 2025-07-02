@@ -19,9 +19,9 @@ model_id_name=Cross_traffic
 data_name=Cross
 
 n_embed=128
-wave_length=6
-wave_stride=6
-token_len=12
+wave_length=8
+wave_stride=8
+token_len=16
 vq_model='W_SimVQ_decompose' # VanillaVQ, SimVQ, SimVQ_CNN, SimVQ_CNN_double_token
 d_model=64
 block_num=3
