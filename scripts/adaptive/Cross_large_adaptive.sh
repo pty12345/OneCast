@@ -25,9 +25,9 @@ model_id_name=Cross_large
 data_name=Cross_large
 
 # VQVAE
-token_len=12
-wave_length=6
-wave_stride=6
+token_len=16
+wave_length=8
+wave_stride=8
 block_num=3
 d_model=64
 n_embed=128
