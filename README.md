@@ -1,5 +1,5 @@
 # TokenTime
-TokenTime: Cross-Domain Time Series Forecasting with Discrete Tokenization
+TokenTime: Cross-Domain Time Series Forecasting with Unified Discrete Tokenization
 
 ### Prepare environments
 ```bash
