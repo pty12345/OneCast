@@ -1,5 +1,5 @@
-# TokenTime
-TokenTime: Cross-Domain Time Series Forecasting with Unified Discrete Tokenization
+# OneCast
+OneCast: Structured Decomposition and Modular Generation for Cross-Domain Time Series Forecasting
 
 ### Prepare environments
 ```bash
